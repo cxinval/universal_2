@@ -1,0 +1,48 @@
+.primiera
+  margin-top: 30px
+  &-wrap
+    background-color: #30363D
+    padding: 30px 25px 35px 25px
+    border-radius: 10px
+    width: 100%
+    min-height: 130px
+    max-height: 130px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    z-index: 1
+
+    &-item
+      position: relative
+      max-width: 234px
+      min-width: 234px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      z-index: 1
+      &::before
+        content: ""
+        width: 1px
+        height: 100%
+        position: absolute
+        top: 0
+        right: -25px
+        background: #4B5157
+        z-index: 99
+          
+
+
+    &__title
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+      text-align: start
+      max-width: 154px
+      &:hover
+        opacity: 0.8
+    &__img
+      object-fit: cover
+      width: 65px
+      height: 65px

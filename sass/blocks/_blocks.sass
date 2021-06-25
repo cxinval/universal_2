@@ -1,0 +1,187 @@
+.blocks
+  background-color: #262D33
+  padding: 60px 0 57px 0
+  &__container
+    display: flex
+    justify-content: space-between
+
+  &-frist
+    position: relative
+    z-index: 10
+    &-item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 555px
+      min-height: 570px
+      border-radius: 10px
+    &__bgc
+      position: relative
+      object-fit: cover
+      max-width: 555px 
+      width: 100%
+      min-height: 570px 
+      z-index: -2
+    &-wrap
+      top: 0
+      position: absolute
+      width: 100%
+      height: 100%
+      padding: 50px 50px 165px 50px
+      z-index: 10
+      display: flex
+      flex-direction: column
+      align-items: center
+      &::after
+        content: ""
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        z-index: -1
+    &__img
+      width: 45px
+      height: 45px
+      object-fit: cover
+      border-radius: 50%
+      margin-bottom: 8px
+    &__name
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+      mix-blend-mode: normal
+      opacity: 0.85
+      margin-bottom: 2px
+    &__position
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #FFFFFF
+      mix-blend-mode: normal
+      opacity: 0.4
+      margin-bottom: 33px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 50px
+      text-align: center
+      color: #FFFFFF
+      margin-bottom: 45px
+    &__button
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+    &__icon
+      margin-right: 8px
+    &__number
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #C5E4FC
+      margin-left: 8px
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-width: 555px
+    max-height: 570px
+  &-second
+    background-color: #D1E2EB
+    max-width: 555px
+    width: 100%
+    min-height: 370px
+    position: relative
+    max-height: 370px
+    z-index: 0
+    border-radius: 10px
+    &__bgc
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: -1
+    &-wrap
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      padding: 35px 0 50px 35px
+      max-width: 243px
+      z-index: 10 !important
+    &__name
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #6E99AE
+      margin-bottom: 20px
+      z-index: 10
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: #262D33
+      margin-bottom: 15px
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+      margin-bottom: 45px
+    &__button
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      display: flex
+      align-items: center
+      color: #FFFFFF
+      cursor: pointer
+      z-index: 10
+  &-third
+    display: flex
+    justify-content: space-between
+    &-wrapper
+      max-width: 263px
+      max-height: 170px
+      padding: 25px 25px 30px 25px
+      background: #FFFFFF
+      border-radius: 10px
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: #262D33
+        margin-bottom: 5px
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #4B5157
+        margin-bottom: 7px
+      &__date
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #939699

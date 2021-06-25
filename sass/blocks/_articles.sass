@@ -1,0 +1,428 @@
+.articles
+  padding-top: 30px
+  padding-bottom: 60px
+  &-items
+    display: grid
+    grid-template-columns: repeat(4, 263px)
+    grid-template-rows: repeat(4, 170px )
+    grid-gap: 30px
+  &-frist
+    padding-top: 35px
+    padding-bottom: 13px
+    display: flex
+    flex-direction: column
+    grid-row: span 2
+    grid-column: span 2
+    max-width: 555px
+    width: 100%
+    min-height: 370px
+    background-color: #fff
+    background-image: url(../img/articles-frist__img.jpg)
+    background-repeat: no-repeat
+    background-size: 292px 299px
+    background-position: top 14px right
+    border-radius: 10px
+    &__span
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #6E99AE
+      margin-bottom: 20px
+      padding-left: 35px
+    &__title
+      text-align: normal
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: #262D33
+      max-width: 263px
+      margin-bottom: 25px
+      padding-left: 35px
+      overflow: hidden
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+      max-width: 263px
+      margin-top: 0
+      padding-left: 35px
+      overflow: hidden
+      margin-bottom: 48px
+    &-coment
+      border-top: 1px solid #D9DADB
+      display: flex
+      align-items: center
+      padding-top: 12px
+
+      &__img
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        margin-left: 35px
+        margin-right: 10px
+      &__name
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #262D33
+        margin-right: 5px
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #4B5157
+        margin-right: 15px
+        
+
+      &__icon
+        width: 13.5px
+        height: 13.5px
+        fill: #BCBFC2
+        margin-right: 7px
+        cursor: pointer
+        &:hover
+          fill: #939699
+      &__number
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #939699
+  &-second
+    grid-column: 3
+    padding: 19px 26px 25px 25px
+    max-width: 263px
+    width: 100%
+    min-height: 370px
+    background-image: url(../img/bgi__articles-second.jpg)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 263px 370px
+    border-radius: 10px
+    position: relative
+    z-index: 10
+    &::after
+      content: ""
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+      z-index: -1
+      border-radius: 10px
+    &__popular
+      z-index: 10
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #FFFFFF
+      border-radius: 3px
+      padding: 5px 12px
+      max-width: 92px
+      min-height: 25px
+      overflow: hidden
+      background: #3DC47E
+      text-align: center
+      margin-bottom: 116px
+    &__title
+      display: block
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #e7d9ff
+      margin-bottom: 23px
+    &__text
+      max-width: 203px
+      text-align: start
+      font-family: roboto-slab
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #FFFFFF
+      margin-top: 0
+      margin-bottom: 27px
+    &-wrapper
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      max-width: 157px
+    &-coment
+      display: flex
+      align-items: center
+      max-width: 212px
+      &__img
+        width: 45px
+        height: 45px
+        object-fit: cover
+        border-radius: 50%
+        margin-right: 10px
+      &__name
+        white-space: nowrap
+        display: flex
+        max-width: 148px
+        width: 100%
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        mix-blend-mode: normal
+        opacity: 0.85
+        margin-right: 0
+      &__data
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        mix-blend-mode: normal
+        opacity: 0.4
+        margin-right: 10px
+
+      &__number
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #FFFFFF
+        mix-blend-mode: normal
+        opacity: 0.4
+      &__icon
+        fill: #ffffff
+        opacity: 0.4
+        cursor: pointer
+        margin-right: 5px
+        &--heart
+          margin-left: 7px
+
+        &:hover
+          opacity: 0.8
+        &--heart:hover
+          fill: #ed0c0c
+  &-third
+    display: flex
+    flex-direction: column
+    max-width: 263px
+    width: 100%
+    min-height: 170px
+    padding: 25px 25px 13px 25px
+    background: #3BBDC4
+    border-radius: 10px
+    background-image: url(../img/File__article-thirds.svg)
+    background-repeat: no-repeat
+    background-size: 56px 72px
+    background-position: top 23px right 21px
+    &__wrap
+      &:hover
+        opacity: 1 
+
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: #FFFFFF
+      max-width: 213px
+      margin-bottom: 10px
+    &__pdf
+      display: block
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #C1F4F5
+      margin-bottom: 19px
+    &-download
+      display: flex
+      align-items: center
+      justify-content: center
+      padding-top: 12px
+      position: relative
+      width: 100%
+      &::after
+        content: ""
+        width: 124%
+        height: 1px
+        background: #96E2E3
+        position: absolute
+        top: 0
+        left: -25px
+      &__link
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+      &__icon
+        cursor: pointer
+        fill: #ffffff
+        margin-right: 10px
+  &-forth
+    grid-column: 4
+    grid-row: span 2
+    padding: 20px 25px 30px 25px
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    max-width: 263px
+    width: 100%
+    min-height: 370px
+    border-radius: 10px
+    background: #FFFFFF
+    position: relative
+    &::after
+      content: ""
+      width: 100%
+      height: 1px
+      position: absolute
+      top: 59px
+      left: 0
+      right: 0
+      background-color: #D9DADB
+    &__title
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #262D33
+      margin-bottom: 19px
+    &-links
+      padding-top: 24px
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+    &__link
+      padding: 5px 15px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: #262D33
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      margin-right: 7px
+      margin-bottom: 13px
+  &-fifth
+    max-width: 263px
+    width: 100%
+    min-height: 370px
+    height: 100%
+    background: #FFFFFF
+    border-radius: 10px
+    overflow: hidden
+    &__img
+      width: 100%
+      max-height: 275px
+      object-fit: cover
+    &__title
+      padding: 15px 0 30px 25px
+      max-width: 213px
+      text-align: start
+      max-width: 213px
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: #262D33
+      margin-right: 0
+  &-eighth
+    grid-column: 2
+  &-item
+    background: #FFFFFF
+    border-radius: 10px
+    padding: 25px 25px 30px 25px
+    max-width: 263px
+    min-height: 170px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+    &__title
+      white-space: nowrap
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: #262D33
+
+    &__text
+      margin-top: 0
+      max-width: 213px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+      margin-bottom: 0
+    &__data
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+      &--mt
+        margin-top: 23px
+  &-tens
+    background: #FFFFFF
+    border-radius: 10px
+    max-width: 263px
+    min-height: 170px
+    padding: 30px 37px 40px 37px
+    &__title
+      text-align: center
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: #262D33
+      margin-bottom: 25px 
+    &-social
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__link
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      cursor: pointer
+      &:hover
+        opacity: 0.8
+    &__facebook
+      background: #4267B2
+      background-image: url(../img/fc__articles-tens__link.svg)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 20px 20px 
+    &__twitter
+      background: #1DA1F2
+      background-image: url(../img/Twitter__articles-tens__link.svg)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 20px 20px 
+    &__youtube
+      background: #FF0000
+      background-image: url(../img/YouTube__articles-tens__link.svg)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 20px 20px 
+

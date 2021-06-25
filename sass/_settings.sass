@@ -1,0 +1,80 @@
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+*:focus
+  outline: none
+
+body
+  font-family: lato,sans-serif
+  background-color: #E5E5E5
+ul,
+li
+  list-style-type: none
+  margin: 0
+  padding: 0
+  cursor: pointer
+
+h1,h2,h3,h4,h5,h6
+  margin-top: 0
+  margin-bottom: 0
+  font-family: roboto-slab, sans-serif
+p
+  margin: 0
+
+button, input, textarea, a
+  outline: none
+  text-decoration: none
+  &:focus
+    outline: none
+  &:active
+    outline: none
+.container
+  max-width: 1140px
+  width: 100%
+  margin: 0 auto
+
+.button
+  border: none
+  background: #4592FF
+  border-radius: 20px
+  padding: 10px 20px
+  white-space: nowrap
+  cursor: pointer
+  &:hover
+    opacity: 0.8
+#mail-error
+  white-space: nowrap
+  margin-top: 5px
+.thanks
+  padding: 60px 0
+  &-container
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title
+    display: block
+    font-size: 20px
+    flex-shrink: 12px
+    color: #000000
+    margin-bottom: 20px
+  &__span
+    font-size: 15px
+    flex-shrink: 12px
+    color: #000000
+    margin-bottom: 15px
+  &__button
+    border: none
+    background: #4592FF
+    border-radius: 20px
+    padding: 10px 20px
+    white-space: nowrap
+    cursor: pointer
+    color: #ffffff
+a:hover
+  opacity: 0.8    

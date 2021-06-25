@@ -1,0 +1,113 @@
+.article-slide
+  background-color: #fff
+  padding-top: 15px
+  padding-bottom: 45px
+  &-container
+    position: relative
+    width: 100%
+  &-arrow
+    display: flex
+    align-items: center
+    position: absolute
+    width: 100%
+    top: 39.8%
+    transform: translateY(-50%)
+    z-index: 10
+    &--size
+      width: 20px
+      height: 20px
+      cursor: pointer
+  &_prev
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background-color: #fff
+    opacity: 0.4
+    position: absolute
+    top: 0
+    left: 34px
+    display: flex
+    align-items: center
+    justify-content: center
+  &_next
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background-color: #fff
+    opacity: 0.4
+    position: absolute
+    top: 0
+    right: 34px
+    display: flex
+    align-items: center
+    justify-content: center
+  &-items
+    width: 100%
+    position: relative
+    
+  &-item
+    overflow: hidden
+    border-radius: 10px
+    border: 1px solid #D9DADB
+    width: 100% 
+    min-height: 614px
+    max-height: 614px
+    z-index: -1
+    &__img
+      width: 100% !important
+      max-height: 555px
+    &-down
+      padding: 10px 35px 10px 35px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      position: absolute
+      bottom: 0
+      right: 0
+      left: 0
+      z-index: 10
+
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &-autor
+      display: flex
+      align-items: center
+      padding-left: 30px
+      position: relative
+      margin-right: 24px
+      &::after
+        content: ""
+        height: 173%
+        width: 1px
+        background-color: #D9DADB
+        position: absolute
+        left: 0
+        top: -4px
+
+      &__icon
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        object-fit: cover
+        margin-right: 10px
+      &__name
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #4B5157
+        margin-bottom: 2px
+      &__position
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #939699
+    &-block
+      display: flex
+      align-items: flex-start
+      flex-direction: column

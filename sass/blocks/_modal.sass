@@ -1,0 +1,93 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    padding: 33px 88px 
+    background-color: #262D33
+    color: #ffffff
+    border-radius: 8px
+    z-index: 101
+    max-width: 494px
+    transform: translate(-50%, -50%)
+    transition: opacity 0.5s
+    visibility: hidden
+    opacity: 0
+    
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+  &__input
+    width: 100%
+    padding-left: 15px
+    min-height: 40px
+    margin-top: 15px
+    border-radius: 10px
+  &__message
+    width: 100%
+    min-height: 123px
+    margin-top: 15px
+    padding-left: 15px
+    padding-top: 15px
+    border-radius: 10px
+    resize: none
+    &:active
+      outline: none
+    &:focus
+      outline: none  
+    &__button
+      margin-top: 15px
+      
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #000000
+    white-space: nowrap
+  &__title
+    white-space: nowrap
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin-top: 0
+    margin-bottom: 15px
+    text-align: center
+    text-transform: uppercase      
+  &__button  
+    width: 100%
+    min-height: 50px
+    text-decoration: none
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #ffffff
+    
+  &__down
+    margin-top: 15px
+    display: flex
+    align-items: center
+    justify-content: space-between  
+.invalid
+  font-size: 12px
